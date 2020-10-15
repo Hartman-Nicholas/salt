@@ -1,0 +1,66 @@
+/* global styles section */
+
+
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+
+.headstyle {
+  background-image: url(../images/background/c-d-x-PDX_a_82obo-unsplash-crop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  color: #000814;
+  height: 100%;
+}
+
+.navBox {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+   list-style:none;
+   text-align: center;
+   margin: 0;
+
+}
+
+.flexNavItem {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid ;
+  flex-grow: 5;
+  background-color: #161a1d;
+  color: #ced4da;
+  font-size: 0.7em;
+
+
+}
+
+@media screen and (min-width:550px)  {
+
+.headstyle {
+    font-size: 1.5em;
+  }
+.flexNavItem {
+  font-size: 1.2em;
+  }
+}
