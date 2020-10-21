@@ -155,7 +155,7 @@ function idxScroll(idx) {
 // ********************************************go to top button**************************************
 
 //Get the button:
-mybutton = document.getElementById("goToTop");
+let mybutton = document.getElementById("goToTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
@@ -169,6 +169,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

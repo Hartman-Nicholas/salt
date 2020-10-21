@@ -210,6 +210,23 @@ button:active {
     color: black;
 }
 
+#contact-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+
+}
+
+#contact-list a {
+  background:none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px;
+
+}
+
+
 
 
 .intro {
@@ -266,6 +283,14 @@ button:active {
   margin-bottom: 5px;
 }
 
+.headingsContainer {
+  padding:5px;
+}
+
+.contentContainer {
+  padding: 5px;
+}
+
 
 .software {
   background-image: url(../images/background/simon-english-dYcypsY4i3I-unsplash.jpg);
@@ -308,7 +333,7 @@ button:active {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.4); /* Black w/  */
 }
 
 /* ******************** MODAL ************************* */
@@ -485,8 +510,23 @@ button.close:active {
   border: 0;
   outline: 0;
   color: #000814;
-  height: 100%;
+  height: auto;
 }
+
+.careerContainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin:20px;
+
+}
+
+.careerPhase {
+    background: rgba(255, 255, 255, 65%);
+    padding: 5px;
+}
+
+
 
 .aboutMe {
   background-image: url(../images/background/tobin-rogers-kdTjNVs0wQ8-unsplash.jpg);
@@ -504,6 +544,7 @@ button.close:active {
 
 .family {
   display: block;
+    padding: 10px 20px;
   margin: 0;
   border: 0;
   outline: 0;
@@ -616,8 +657,10 @@ footer {
   display: block;
   background: #343434;
   color: #F7FFF7;
+  padding: 10px 20px;
+  text-align: center;
+  height: 265px;
 }
-
 
 @media screen and (min-width:710px) {
 
@@ -640,4 +683,18 @@ footer {
     flex-direction: row;
     height: 100%;
   }
+  .careerContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .career {
+    height:120%;
+  }
+  #contact-list {
+    flex-direction: row;
+  }
+  footer {
+    height:170px;
+  }
+
 }
