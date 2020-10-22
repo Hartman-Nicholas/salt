@@ -1,3 +1,6 @@
 # Lets get this working
 
 images/
+*.log
+debug.log
+.log

@@ -563,13 +563,19 @@ button.close:active {
 .slideshow-container {
   max-width: 100%;
   position: relative;
-  margin: 0;
+  margin: auto;
+  height: 60%;
+
 
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+width: 100%;
 }
 
 /* Next & previous buttons */
