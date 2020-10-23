@@ -12,18 +12,17 @@ let button = document.getElementsByClassName("close");
 // When the user clicks the button, open the modal
 
 for (let i = 0; i < btn.length; i++) {
-  btn[i].onclick = function() {
+  btn[i].addEventListener("click", function() {
     modal[i].style.display = "block";
     return modal[i];
-  };
+  });
 }
 
 // When the user clicks on <button> (x), close the modal
 for (let i = 0; i < button.length; i++) {
-  button[i].onclick = function() {
+  button[i].addEventListener("click", function() {
     modal[i].style.display = "none";
-    console.log("My value:" + i);
-  };
+  });
 }
 
 // When the user clicks anywhere outside of the modal, close it
