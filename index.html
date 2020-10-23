@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,14 +20,16 @@
 
 <body>
 
-  <div id="arrow">
-    <a href='#/'>◀</a>
-    <a href='#/'>▶</a>
-  </div>
+<!-- ************************* Document Navigation ************************* -->
 
   <header>
     <nav class="navBox">
       <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+      <button onclick="topFunction()" id="goToTop" title="Go to top">back to top</button>
+      <div id="arrow">
+        <a href='#/'>◀</a>
+        <a href='#/'>▶</a>
+      </div>
       <div id="myDropdown" class="dropdown-content">
         <ul>
           <li> <a href="#navIntro">Welcome Page</a></li>
@@ -44,8 +45,6 @@
     </nav>
   </header>
 
-  <button onclick="topFunction()" id="goToTop" title="Go to top">back to top</button>
-
   <section id="navIntro" class="intro active">
     <h1>Nicholas Hartman </h1>
     <h1>Sales & Service<br>Professional</h1>
@@ -54,7 +53,7 @@
     <h2>&lt/salt&gt application</h2>
   </section>
 
-  <!-- ********************** Why Salt section ********************** -->
+<!-- ************************ Why Salt section ***************************** -->
 
   <section id="navSalt" class="whySalt">
 
@@ -118,26 +117,25 @@
 
   </section>
 
-  <!-- ********************** Software Journey ********************** -->
+<!-- ************************ Software Journey ***************************** -->
   <section id="navSoftware" class="software">
 
     <h1>Software Journey</h1>
     <blockquote>“The journey of a thousand miles begins with one step.”
-      <cite>– Lao Tzu <cite></blockquote>
+      <cite>– Lao Tzu <cite>
+    </blockquote>
 
   </section>
 
-
-  <!-- ********************** Developer Langauge ********************** -->
-
-  <!-- *************************HTML Modal***************************** -->
+<!-- ************************ Developer Langauge *************************** -->
+<!-- ************************** HTML Modal ********************************* -->
 
   <section id="navDev" class="developer">
 
     <h1>Developer Langauges</h1>
     <div class="devContainer">
       <span class="html">
-        <button class="myBtn" type="button">&nbsp&nbsp&nbsp&lthtml&gt&nbsp&nbsp&nbsp</button>
+        <button class="myBtn" type="button">&lthtml&gt</button>
         <div class="myModal modal">
 
           <!-- Modal content -->
@@ -159,11 +157,10 @@
         </div>
       </span>
 
-      <!-- ****************************************CSS Modal************************* -->
-
+<!-- ****************************** CSS Modal ****************************** -->
 
       <span class="css">
-        <button class="myBtn" type="button">&nbsp&nbsp{CSS}&nbsp&nbsp</button>
+        <button class="myBtn" type="button">{CSS}</button>
         <div class="myModal modal">
 
           <!-- Modal content -->
@@ -185,8 +182,7 @@
         </div>
       </span>
 
-      <!-- *************************************************javascript modal ******************************************* -->
-
+<!-- ************************** javascript modal *************************** -->
 
       <span class="javaScript">
         <button class="myBtn" type="button">JavaScript</button>
@@ -209,11 +205,9 @@
             </div>
           </div>
         </div>
-
       </span>
 
-
-      <!-- ********************************************************Python modal******************************************* -->
+<!-- **************************** Python modal ***************************** -->
 
       <span class="python">
         <button class="myBtn" type="button">Python</button>
@@ -234,13 +228,12 @@
             </div>
           </div>
         </div>
-
       </span>
 
-      <!-- ******************************************************mySQL modal************************************************ -->
+<!-- ***************************** mySQL modal ***************************** -->
 
       <span class="mySQL">
-        <button class="myBtn" type="button">&nbsp&nbsp&nbspmySQL&nbsp&nbsp&nbsp</button>
+        <button class="myBtn" type="button">mySQL</button>
         <div class="myModal modal">
 
           <!-- Modal content -->
@@ -258,13 +251,12 @@
             </div>
           </div>
         </div>
-
       </span>
 
-      <!-- **********************************************************C++ modal************************************************* -->
+<!-- ********************************* C++ modal *************************** -->
 
       <span class="C">
-        <button class="myBtn" type="button">&nbsp&nbsp&nbspC++&nbsp&nbsp&nbsp</button>
+        <button class="myBtn" type="button">C++</button>
         <div class="myModal modal">
 
           <!-- Modal content -->
@@ -282,27 +274,70 @@
             </div>
           </div>
         </div>
+      </span>
 
+<!-- ********************************* Java ******************************** -->
+
+      <span class="java">
+        <button class="myBtn" type="button">Java</button>
+        <div class="myModal modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close">&times;</button>
+              <h2>class</h2>
+            </div>
+            <div class="modal-body">
+              <p>Learning C# - Alexander Zanfir</p>
+
+            </div>
+            <div class="modal-footer">
+              <h2>method</h2>
+            </div>
+          </div>
+        </div>
+      </span>
+
+<!-- ********************************* Other ******************************* -->
+
+      <span class="other">
+        <button class="myBtn" type="button">Other</button>
+        <div class="myModal modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close">&times;</button>
+              <h2>class</h2>
+            </div>
+            <div class="modal-body">
+              <p>Learning C# - Alexander Zanfir</p>
+
+            </div>
+            <div class="modal-footer">
+              <h2>method</h2>
+            </div>
+          </div>
+        </div>
       </span>
     </div>
-
   </section>
 
-
-
-  <!-- ********************** Work Experience ********************** -->
+<!-- **************************** Work Experience ************************** -->
+<!-- ****************** Work Experience - Modal Section ******************** -->
 
   <section id="navWork" class="work">
-
     <h1>Work Experience - Education</h1>
-
     <h3>Transferable Skills</h3>
     <div class="workModal">
+
+<!-- **************************** Problem Solving ************************** -->
+
       <span class="workModalStyle">
         <button class="myBtn" type="button">Problem Solving</button>
         <div class="myModal modal">
 
-          <!-- Modal content -->
           <div class="modal-content">
             <div class="modal-header">
               <button class="close">&times;</button>
@@ -321,6 +356,8 @@
           </div>
         </div>
       </span>
+
+<!-- **************************** Teaming ********************************** -->
 
       <span class="workModalStyle">
         <button class="myBtn" type="button">Teaming / Teamleader</button>
@@ -345,6 +382,8 @@
           </div>
         </div>
       </span>
+
+<!-- ************************* Project Management ************************** -->
 
       <span class="workModalStyle">
         <button class="myBtn" type="button">Project Management</button>
@@ -372,6 +411,8 @@
         </div>
       </span>
 
+<!-- **************************** Customer Focus *************************** -->
+
       <span class="workModalStyle">
         <button class="myBtn" type="button">Customer Focus</button>
         <div class="myModal modal">
@@ -398,6 +439,8 @@
         </div>
       </span>
 
+<!-- *************************** Conflict Resolution *********************** -->
+
       <span class="workModalStyle">
         <button class="myBtn" type="button">Conflict Resolution</button>
         <div class="myModal modal">
@@ -410,7 +453,7 @@
             </div>
             <div class="modal-body">
               <p>Trained in essential conflict resolution techniques such as <br>
-              Partner technique, listening to understand, acknowledge feelings, and refocus on a solution.</p>
+                Partner technique, listening to understand, acknowledge feelings, and refocus on a solution.</p>
               <p>De-Escalating Intense Situations - Myra Golden</p>
               <p>Creating Positive Conversations with Challenging Customers - Myra Golden</p>
               <p>Customer Service: Handling Abusive Customers - David Brownlee</p>
@@ -421,9 +464,10 @@
           </div>
         </div>
       </span>
-
     </div>
 
+<!-- ********************  Work Experience - Text Section ****************** -->
+<!-- ****************************** Education ****************************** -->
 
     <div class="contentWrap">
       <div class=headingsContainer>
@@ -437,6 +481,8 @@
         <p>Utbildningen är inriktad mot företagsekonomi med tyngdpunkt <br> på finansiering, och mot
           nationalekonomi.</p>
       </div>
+
+<!-- *************************** TVE Overview ****************************** -->
 
       <div class=headingsContainer>
         <h3>Transvaal Electric Motors</h3>
@@ -458,17 +504,20 @@
         </p>
       </div>
 
+<!-- ********************** Internal Sales Manager ************************* -->
+
       <div class=headingsContainer>
         <h3>Internal Sales Manager</h3>
         <p>Transvaal Electric Motors</p>
         <p>2016 - 2020</p>
         <p>Relocated to Sweden</p>
       </div>
-
       <div class="contentContainer">
         <p>Analysing internal and external business processes to optimise customer sales and service. External customer focus to ensure quick and concise customer support at all times in a challenging market environment. Driving business success
           initiatives, management reporting and modernisation to enhance the customer experience. Lead generation, customer proposals and closing sales.</p>
       </div>
+
+<!-- *********************** Business Development Manager ****************** -->
 
       <div class=headingsContainer>
         <h3>Business Development Manager</h3>
@@ -483,6 +532,8 @@
           Working with international customers to secure TVE's place as a global supplier.</p>
       </div>
 
+<!-- *********************** Junior Production Assistant ******************* -->
+
       <div class=headingsContainer>
         <h3>Junior Production Assistant</h3>
         <p>Transvaal Electric Motors</p>
@@ -494,21 +545,17 @@
           and analysis, dealing with customer queries assisting the production manager
           and planning manager with day to day functions.</p>
       </div>
-
     </div>
-
-
-
   </section>
 
-
-  <!-- ********************** Career Journey ********************** -->
+<!-- ************************** Career Journey *************************** -->
 
   <section id="navCareer" class="career">
-
     <h1>Career Plan</h1>
-
     <div class="careerContainer">
+
+<!-- ****************************** Phase One ****************************** -->
+
       <div class="careerPhase">
         <h2>Phase One</h2>
         <p>Get a basic handle on software development.</p>
@@ -519,6 +566,8 @@
         <p>Continue to learn and grow.</p>
 
       </div>
+
+<!-- **************************** Phase Two ******************************** -->
 
       <div class="careerPhase">
         <h2>Phase Two</h2>
@@ -531,6 +580,7 @@
         <p>Continue to learn and grow.</p>
       </div>
 
+<!-- **************************** Phase Three ****************************** -->
       <div class="careerPhase">
         <h2>Phase Three</h2>
 
@@ -539,79 +589,47 @@
         <p>Continue to contrubite to the Dev community.</p>
         <p>Continue to learn and grow.</p>
       </div>
-
     </div>
-
   </section>
 
-
-
-  <!-- ********************** About Me ********************** -->
-
+<!-- ********************* About Me - Removed **************************** -->
   <!-- <section id="navAboutMe" class="aboutMe">
-
     <h1>About Me</h1>
-
-
   </section> -->
 
-  <!-- ****************************slideshow********************* -->
+<!-- **************************** Family *********************************** -->
 
   <section id="navFamily" class="family">
-
     <h1>Family</h1>
 
-    <!-- Slideshow container -->
     <div class="slideshow-container">
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img7.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img1.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img2.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img3.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img4.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
-
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img5.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
         <img src="../images/family/img6.jpg">
-        <!-- <div class="text">Caption Text</div> -->
       </div>
 
       <!-- Next and previous buttons -->
@@ -631,11 +649,12 @@
     </div>
   </section>
 
+<!-- ***************************** Footer ********************************** -->
+
   <footer>
     <div class="content-wrap">
       <h2>Let's Keep in Touch!</h2>
 
-      <!-- Social media and contact links. Add or remove any networks. -->
       <ul id="contact-list">
         <li><a href="mailto:hartn001@gmail.com">hartn001@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/nicholas-hartman-86201050/" target="_blank">LinkedIn</a></li>
@@ -644,7 +663,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
-
 </html>

@@ -1,6 +1,11 @@
 /* font-family: 'Caveat', cursive;
 font-family: 'Montserrat', sans-serif; */
+
+
 /* global styles section */
+
+* {box-sizing:border-box}
+
 body, html {
   margin: 0;
   height: 100%;
@@ -34,6 +39,15 @@ h2 {
   margin-top: 10px;
 }
 
+footer {
+  display: block;
+  background: #343434;
+  color: #F7FFF7;
+  padding: 10px 20px;
+  text-align: center;
+  height: 265px;
+}
+
 button {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -49,115 +63,6 @@ button {
   border-radius: 15px;
   /* box-shadow: 0 9px #999; */
 }
-
-button:hover {background-color: #3e8e41}
-
-button:active {
-  background-color: #3e8e41;
-  /* box-shadow: 0 5px #666; */
-  transform: translateY(4px);
-}
-
-
-.navBox {
-  margin: 0;
-  padding: 0;
-}
-
-.navBox ul {
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-content: stretch;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-}
-
-.navBox li {
-  flex-grow: 1;
-  border: 1px solid white;
-}
-
-.navBox a {
-  margin: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  background-color: #339989;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  flex-grow: 1;
-  padding: 20px;
-}
-
-.navBox a:hover {
-  background-color: #3e8e41;
-  transform: translateY(2px);
-}
-
-
-/* *************************************content bar drop down************************** */
-
-/* Dropdown Button */
-.dropbtn {
-  background-color: #339989;
-  color: #fff;
-  padding: 10px;
-  font-size: 1.2em;
-  border: none;
-  cursor: pointer;
-  position: fixed;
-  top: 3px;
-  right: 3px;
-  z-index: 97; /* Make sure it does not overlap */
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  /* background-color: #339989; */
-  /* color: black; */
-}
-
-
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  /* color: black;
-  padding: 12px 16px;
-  text-decoration: none; */
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-/* .dropdown-content a:hover {background-color: #ddd} */
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
 
 #arrow {
   bottom: 20px;
@@ -226,8 +131,108 @@ button:active {
 
 }
 
+button:hover {
+  background-color: #3e8e41
+}
 
+button:active {
+  background-color: #3e8e41;
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(4px);
+}
 
+.navBox {
+  margin: 0;
+  padding: 0;
+}
+
+.navBox ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+}
+
+.navBox li {
+  flex-grow: 1;
+  border: 1px solid white;
+}
+
+.navBox a {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  background-color: #339989;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.navBox a:hover {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+
+/* *************************************content bar drop down************************** */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #339989;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 3px;
+  right: 3px;
+  z-index: 97; /* Make sure it does not overlap */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  /* background-color: #339989; */
+  /* color: black; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  /* color: black;
+  padding: 12px 16px;
+  text-decoration: none; */
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #ddd} */
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .intro {
   background-image: url(../images/background/c-d-x-PDX_a_82obo-unsplash-crop.jpg);
@@ -244,10 +249,7 @@ button:active {
   font-size: 1.5em;
 }
 
-
 /* ******************************** why salt ************************************* */
-
-
 
 .whySalt {
   background-image: url(../images/background/leone-venter-VieM9BdZKFo-unsplash.jpg);
@@ -291,7 +293,6 @@ button:active {
   padding: 5px;
 }
 
-
 .software {
   background-image: url(../images/background/simon-english-dYcypsY4i3I-unsplash.jpg);
   background-size: cover;
@@ -306,7 +307,6 @@ button:active {
   height: 100%;
 }
 
-
 .developer {
   background-image: url(../images/background/artem-sapegin-b18TRXc8UPQ-unsplash.jpg);
   background-size: cover;
@@ -319,6 +319,11 @@ button:active {
   outline: 0;
   color: #000814;
   height: 100%;
+}
+
+button.myBtn {
+  width:35vmin;
+  height: auto;
 }
 
 /* The Modal (background) */
@@ -347,10 +352,10 @@ button:active {
   color: white;
   text-align: center;
 }
+
 .modal-header, h2 {
   font-size: 1.6em;
 }
-
 /* The Close Button */
 button.close {
   color: white;
@@ -373,7 +378,6 @@ button.close:active {
   /* box-shadow: 0 5px #666; */
   transform: translateY(4px);
 }
-
 
 /* Modal Body */
 .modal-body {padding: 2px 16px;}
@@ -435,7 +439,12 @@ button.close:active {
 }
 .C {
   grid-area: C;
-
+}
+.java {
+  grid-area: java;
+}
+.other {
+  grid-area: other;
 }
 
 .devContainer {
@@ -450,11 +459,12 @@ button.close:active {
   align-items: center;
   justify-content: stretch;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "html css"
   "javaScript python"
-  "mySQL C";
+  "mySQL C"
+  "java other";
 }
 
 .work {
@@ -483,22 +493,6 @@ button.close:active {
   align-items: baseline;
 }
 
-.workModalStyle{
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  background-color: #339989;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  flex: 1 0 50px;
-  border-radius: 15px;
-  /* width: 100%; */
-
-}
-
-
-
 .career {
   background-image: url(../images/background/emma-matthews-digital-content-production-MG_yBBC0v50-unsplash.jpg);
   background-size: cover;
@@ -526,9 +520,7 @@ button.close:active {
     padding: 5px;
 }
 
-
-
-.aboutMe {
+/* .aboutMe {
   background-image: url(../images/background/tobin-rogers-kdTjNVs0wQ8-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -540,7 +532,7 @@ button.close:active {
   outline: 0;
   color: #000814;
   height: 100%;
-}
+} */
 
 .family {
   display: block;
@@ -552,12 +544,7 @@ button.close:active {
 
 }
 
-
-
-
 /* ************************************ slideshow************************************ */
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -575,7 +562,7 @@ button.close:active {
 }
 
 .mySlides img {
-width: 100%;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -659,15 +646,6 @@ width: 100%;
   to {opacity: 1}
 } */
 
-footer {
-  display: block;
-  background: #343434;
-  color: #F7FFF7;
-  padding: 10px 20px;
-  text-align: center;
-  height: 265px;
-}
-
 @media screen and (min-width:710px) {
 
   h1 {
@@ -678,6 +656,15 @@ footer {
     font-size: 1.7em;
   }
 
+  footer {
+    height:170px;
+  }
+
+  button.myBtn {
+    width:20vmin;
+    height: auto;
+  }
+
   .navBox li {
     font-size: 1.2em;
   }
@@ -685,10 +672,12 @@ footer {
   .navBox ul {
     flex-direction: row;
   }
+
   .workModal {
     flex-direction: row;
     height: 100%;
   }
+
   .careerContainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -696,11 +685,8 @@ footer {
   .career {
     height:120%;
   }
+
   #contact-list {
     flex-direction: row;
   }
-  footer {
-    height:170px;
-  }
-
 }
