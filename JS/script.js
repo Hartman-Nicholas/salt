@@ -116,38 +116,60 @@ function topFunction() {
 
 // ******************************* Modal ***************************************
 
-// Get the modal
-let modal = document.getElementsByClassName("myModal");
+let closeBtns = document.querySelectorAll(".close");
 
-// Get the button that opens the modal
-let btn = document.getElementsByClassName("myBtn");
+let modalBtns = document.querySelectorAll(".myBtn");
 
-// Get the <button> element that closes the modal
-let button = document.getElementsByClassName("close");
+modalBtns.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    let modal = btn.getAttribute("data-modal");
 
+    document.getElementById(modal).style.display = "block";
+});
+});
+
+closeBtns.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    let modal = (btn.closest(".modal").style.display ="none");
+  });
+});
+
+window.addEventListener ("click", function(event) {
+  if(event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
+});
+
+// Get the modal - JSLinter W083 Warning
+// let modal = document.querySelectorAll(".myModal");
+//
+// // Get the button that opens the modal
+// let btn = document.querySelectorAll(".myBtn");
+//
+// // Get the <button> element that closes the modal
+// let button = document.querySelectorAll(".close");
 // When the user clicks the button, open the modal
-
-for (let i = 0; i < btn.length; i++) {
-  btn[i].addEventListener("click", function() {
-    modal[i].style.display = "block";
-    return modal[i];
-  });
-}
-
-// When the user clicks on <button> (x), close the modal
-for (let i = 0; i < button.length; i++) {
-  button[i].addEventListener("click", function() {
-    modal[i].style.display = "none";
-  });
-}
-
-// When the user clicks anywhere outside of the modal, close it
-for (let i = 0; i < modal.length; i++)
-  window.addEventListener("click", function(event) {
-    if (event.target == modal[i]) {
-      modal[i].style.display = "none";
-    }
-  });
+//
+// for (let i = 0; i < btn.length; i++) {
+//   btn[i].addEventListener("click", function() {
+//     modal[i].style.display = "block";
+//     return modal[i];
+//   });
+// }
+// // When the user clicks on <button> (x), close the modal
+// for (let i = 0; i < button.length; i++) {
+//   button[i].addEventListener("click", function() {
+//     modal[i].style.display = "none";
+//   });
+// }
+//
+// // When the user clicks anywhere outside of the modal, close it
+// for (let i = 0; i < modal.length; i++)
+//   window.addEventListener("click", function(event) {
+//     if (event.target == modal[i]) {
+//       modal[i].style.display = "none";
+//     }
+//   });
 
 // ********************************* Slideshow *********************************
 

@@ -139,8 +139,8 @@
     <h1>Developer Langauges</h1>
     <div class="devContainer">
       <span class="html">
-        <button class="myBtn" type="button">&lthtml&gt</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="html">&lthtml&gt</button>
+        <div class="modal" id="html">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -165,8 +165,8 @@
 <!-- ****************************** CSS Modal ****************************** -->
 
       <span class="css">
-        <button class="myBtn" type="button">{CSS}</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="css">{CSS}</button>
+        <div class="modal" id="css">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -190,8 +190,8 @@
 <!-- ************************** javascript modal *************************** -->
 
       <span class="javaScript">
-        <button class="myBtn" type="button">JavaScript</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="javaScript">JavaScript</button>
+        <div class="modal" id="javaScript">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -215,8 +215,8 @@
 <!-- **************************** Python modal ***************************** -->
 
       <span class="python">
-        <button class="myBtn" type="button">Python</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="python">Python</button>
+        <div class="modal" id="python">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -238,8 +238,8 @@
 <!-- ***************************** mySQL modal ***************************** -->
 
       <span class="mySQL">
-        <button class="myBtn" type="button">mySQL</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="mySQL">mySQL</button>
+        <div class="modal" id="mySQL">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -261,8 +261,8 @@
 <!-- ********************************* C++ modal *************************** -->
 
       <span class="C">
-        <button class="myBtn" type="button">C++</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="C">C++</button>
+        <div class="modal" id="C">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -284,8 +284,8 @@
 <!-- ********************************* Java ******************************** -->
 
       <span class="java">
-        <button class="myBtn" type="button">Java</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="java">Java</button>
+        <div class="modal" id="java">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -307,8 +307,8 @@
 <!-- ********************************* Other ******************************* -->
 
       <span class="other">
-        <button class="myBtn" type="button">Other</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="other">Other</button>
+        <div class="modal" id="other">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -344,8 +344,8 @@
 <!-- **************************** Problem Solving ************************** -->
 
       <span class="workModalStyle">
-        <button class="myBtn" type="button">Problem Solving</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="problem">Problem Solving</button>
+        <div class="modal" id="problem">
 
           <div class="modal-content">
             <div class="modal-header">
@@ -369,8 +369,8 @@
 <!-- **************************** Teaming ********************************** -->
 
       <span class="workModalStyle">
-        <button class="myBtn" type="button">Teaming / Teamleader</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="teaming">Teaming / Teamleader</button>
+        <div class="modal" id="teaming">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -395,8 +395,8 @@
 <!-- ************************* Project Management ************************** -->
 
       <span class="workModalStyle">
-        <button class="myBtn" type="button">Project Management</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="project">Project Management</button>
+        <div class="modal" id="project">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -423,8 +423,8 @@
 <!-- **************************** Customer Focus *************************** -->
 
       <span class="workModalStyle">
-        <button class="myBtn" type="button">Customer Focus</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="customer">Customer Focus</button>
+        <div class="modal" id="customer">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -451,8 +451,8 @@
 <!-- *************************** Conflict Resolution *********************** -->
 
       <span class="workModalStyle">
-        <button class="myBtn" type="button">Conflict Resolution</button>
-        <div class="myModal modal">
+        <button class="myBtn" data-modal="conflict">Conflict Resolution</button>
+        <div class="modal" id="conflict">
 
           <!-- Modal content -->
           <div class="modal-content">
@@ -590,11 +590,12 @@
       </div>
 
 <!-- **************************** Phase Three ****************************** -->
+
       <div class="careerPhase">
         <h2>Phase Three</h2>
 
         <p>Leverage my developer and startup network to start my own business.</p>
-        <p></p>
+        <p>Higher some &lt/salt&gt graduates.</p>
         <p>Continue to contrubite to the Dev community.</p>
         <p>Continue to learn and grow.</p>
       </div>
@@ -641,8 +642,7 @@
         <img src="../images/family/img6.jpg">
       </div>
 
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
