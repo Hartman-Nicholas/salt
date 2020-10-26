@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+
+
 // ******************************** Drop down content **************************
 
 /* When the user clicks on the button,
@@ -10,7 +12,7 @@ function myFunction() {
 
 // Close the dropdown menu if the user clicks outside of it
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -95,7 +97,7 @@ function idxScroll(idx) {
 let mybutton = document.getElementById("goToTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -120,22 +122,22 @@ let closeBtns = document.querySelectorAll(".close");
 
 let modalBtns = document.querySelectorAll(".myBtn");
 
-modalBtns.forEach(function(btn) {
-  btn.addEventListener("click", function() {
+modalBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
     let modal = btn.getAttribute("data-modal");
 
     document.getElementById(modal).style.display = "block";
-});
-});
-
-closeBtns.forEach(function(btn) {
-  btn.addEventListener("click", function() {
-    let modal = (btn.closest(".modal").style.display ="none");
   });
 });
 
-window.addEventListener ("click", function(event) {
-  if(event.target.className === "modal") {
+closeBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    let modal = (btn.closest(".modal").style.display = "none");
+  });
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target.className === "modal") {
     event.target.style.display = "none";
   }
 });
