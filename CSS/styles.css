@@ -414,9 +414,10 @@ button.close:active {
 
 .devContainer {
   display: grid;
-  margin-top: 40px;
+  margin-top: 10%;
   margin-left: 20px;
   margin-right: 20px;
+  justify-content: space-evenly;
   row-gap: 30px;
   text-align: center;
   grid-template-areas:
