@@ -13,6 +13,7 @@ html {
   height: 100%;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
 }
 
 h1 {
@@ -170,7 +171,7 @@ button:active {
   display: block;
   text-align: center;
   flex-grow: 1;
-  padding: 15px;
+  padding: 20px;
 }
 
 .navBox a:hover {
